@@ -1,14 +1,13 @@
 package Vehicles;
 
-public class SailBoat {
+public class SailBoat extends GeneralVehicle {
 
-    private String name;
-    private double acceleration;    // m/s squared
-    private double deceleration;    // m/s squared
-    private int topSpeed;           // Knt Calm water with a fixed wind speed
+    private int numOfSails;         // number of sails that need to be put up before sailing can commence
 
-    private int numOfSails;         // number of sails that need toi be put up before sailing can commence
+    public SailBoat (String name, double acceleration, double deceleration, double topSpeed, double position, double currentSpeed, int numOfSails) {
+        super(name, acceleration, deceleration, topSpeed, position, currentSpeed);
 
-    private double position;        // Metres from start
-    private double CurrentSpeed;    // Knt
+        this.numOfSails = numOfSails;
+    }
+
 }

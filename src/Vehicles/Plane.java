@@ -1,15 +1,12 @@
 package Vehicles;
 
-public class Plane {
-
-    private String name;
-    private double acceleration;    // m/s squared
-    private double deceleration;    // m/s squared
-    private int topSpeed;           // Knt on a calm day
+public class Plane extends GeneralVehicle {
 
     private int preFlightChecks;    // number of pre-flight checks that need to be completed before take-off
 
-    private double position;        // Metres from start
-    private double CurrentSpeed;    // Knt
+    public Plane (String name, double acceleration, double deceleration, double topSpeed, double position, double currentSpeed, int preFlightChecks) {
+        super(name, acceleration, deceleration, topSpeed, position, currentSpeed);
+        this.preFlightChecks = preFlightChecks;
+    }
 
 }

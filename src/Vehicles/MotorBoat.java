@@ -1,13 +1,9 @@
 package Vehicles;
 
-public class MotorBoat {
+public class MotorBoat extends GeneralVehicle {
 
-    private String name;
-    private double acceleration;    // m/s squared
-    private double deceleration;    // m/s squared
-    private int topSpeed;           // knt on calm water with fixed wind speed
-
-    private double position;        // Metres from start
-    private double CurrentSpeed;    // Knt
+    public MotorBoat (String name, double acceleration, double deceleration, double topSpeed, double position, double currentSpeed) {
+        super(name, acceleration, deceleration, topSpeed, position, currentSpeed);
+    }
 
 }
