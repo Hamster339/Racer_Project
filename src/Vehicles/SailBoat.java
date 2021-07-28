@@ -1,6 +1,6 @@
 package Vehicles;
 
-public class SailBoat extends GeneralVehicle {
+public class SailBoat extends GeneralVehicle  {
 
     private int numOfSails;         // number of sails that need to be put up before sailing can commence
 

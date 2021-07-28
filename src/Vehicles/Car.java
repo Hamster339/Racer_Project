@@ -1,13 +1,11 @@
 package Vehicles;
 
-public class Car {
+public class Car extends GeneralVehicle  {
 
-    private String name;
-    private double acceleration;    // m/s squared
-    private double deceleration;    // m/s squared
-    private int topSpeed;           // MPH On a Straight road on a dry day
+    public Car (String name, double acceleration, double deceleration, double topSpeed, double position, double currentSpeed) {
+        super(name, acceleration, deceleration, topSpeed, position, currentSpeed);
 
-    private double position;        // Metres from start
-    private double CurrentSpeed;    // MPH
+    }
+
 
 }

@@ -1,6 +1,6 @@
 package Vehicles;
 
-public class Plane extends GeneralVehicle {
+public class Plane extends GeneralVehicle  {
 
     private int preFlightChecks;    // number of pre-flight checks that need to be completed before take-off
 
